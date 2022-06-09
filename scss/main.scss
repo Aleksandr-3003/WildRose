@@ -1,0 +1,92 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+%t-style-menu{
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+  body{
+    background: wheat;
+  }
+.cont-center{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #EAE8E4;
+}
+.logo{
+  margin: 16px 0px;
+}
+.lin{
+  margin-bottom: 11px;
+}
+.a{
+  @extend %t-style-menu;
+  padding-bottom: 14px;
+  
+ 
+    &:hover { color: #C15FAC;
+		  
+      border-bottom: 1px solid #C15FAC;
+    
+    
+  }}
+
+.ico{
+  margin-left: 1.5vw;}
+
+.burg{
+  background-color: #ffffff;
+}
+.lin-mob:after{
+    
+    
+    padding: 8px;
+    content: " ";
+    background-image: url(ico/Next.png);
+    background-repeat: no-repeat;
+}
+
+.lin-m{
+  background: #ffffff;
+  padding: 11px 5px;
+  border-bottom: 1px solid #EAE8E4;
+   text-align: left;
+ }
+
+.lin-mob{
+  background: #ffffff;
+  padding: 11px 5px;
+  border-bottom: 1px solid #EAE8E4;
+   text-align: left;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .lin-m:hover {
+  color: #C15FAC;
+  border-bottom: 1px solid #C15FAC;
+}
+
+.lin-mob:hover {
+  color: #C15FAC;
+  border-bottom: 1px solid #C15FAC;
+}
+
+.a-mob:hover{
+  color:#C15FAC;
+  
+}
+.a-mob{
+  @extend %t-style-menu;
+
+}
+
+@media (max-width: 576px){
+  .ico-sing{ display: none;}
+}
